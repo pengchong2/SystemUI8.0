@@ -22,6 +22,18 @@ cd  /J6-Android-8.1.0/mydroid
 
 lunch 38
 
-cd frameworks/base/packages/SystemUI1
+cd frameworks/base/packages/SystemUI1  （这里需要注意为工程的名字不要为SystemUI,其他的都可以）
 
 mm
+
+# 5.类说明
+
+SystemUIApplication.java 继承Application,应用初始化
+
+FlyaudioSystemUI.java 监听导航栏底部的操作事件返回，主页，全部应用
+
+IProxyConnet.aidl 定义调用系统的接口
+
+StatusBar.java 加载状态栏和底部导航栏
+
+

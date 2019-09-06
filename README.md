@@ -36,4 +36,17 @@ IProxyConnet.aidl 定义调用系统的接口
 
 StatusBar.java 加载状态栏和底部导航栏
 
+PanelView.java 监听下拉事件来显示和收起下拉菜单
+
+QuickStatusBarHeader.java 监听亮度设置和声音设置
+
+PowerButton.java 所有快捷按钮wifi,蓝牙等的基础类
+
+PowerWidget.java 下拉菜单快捷按钮自定义布局类，继承FrameLayout
+
+# 6.0项目进度
+完成
+
+
+
 

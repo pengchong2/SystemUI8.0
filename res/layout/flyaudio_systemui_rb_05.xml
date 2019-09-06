@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的-->
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tag="5"
+    android:id="@+id/rg0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+    android:paddingStart="40px"
+    android:paddingEnd="40px"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <!--保养-->
+<RadioButton android:id="@+id/rb1"
+    android:tag="cn.flyaudio.vehiclemaintenance;cn.flyaudio.vehiclemaintenance.activity.NetWorkVersionActivity"
+    android:layout_weight="1"
+    android:checked="true"
+    android:gravity="center"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+    android:button="@null"
+    android:textSize="32px"
+    android:text="@string/flyaudio_Maintain"
+    android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+    <!--救援-->
+    <RadioButton
+        android:id="@+id/rb2"
+        android:tag="com.flyaudio.flymine;com.flyaudio.flymine.activity.RescueActivity"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+        android:button="@null"
+        android:textSize="32px"
+        android:text="@string/flyaudio_Rescue"
+        android:textColor="@color/flyaudio_systemui_tablelist_textcolor" />
+
+    <!--用户反馈-->
+    <RadioButton
+        android:id="@+id/rb3"
+        android:tag="cn.flyaudio.flyremotediagnose;cn.flyaudio.flyremotediagnose.ui.GuideActivity"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+        android:button="@null"
+        android:textSize="32px"
+        android:text="@string/flyaudio_UserFeedback"
+        android:textColor="@color/flyaudio_systemui_tablelist_textcolor" />
+
+    <!--个人中心-->
+    <RadioButton
+        android:id="@+id/rb4"
+        android:tag="cn.flyaudio.accountmanager;cn.flyaudio.accountmanager.ui.AccountActivity"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+        android:button="@null"
+        android:textSize="32px"
+        android:text="@string/flyaudio_PersonalCenter"
+        android:textColor="@color/flyaudio_systemui_tablelist_textcolor" />
+
+    <!--第三方应用-->
+    <RadioButton
+        android:id="@+id/rb5"
+        android:tag="cn.flyaudio.moreapplication;cn.flyaudio.moreapplication.ui.MainActivity"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+        android:button="@null"
+        android:textSize="32px"
+        android:text="@string/flyaudio_AllApp"
+        android:textColor="@color/flyaudio_systemui_tablelist_textcolor" />
+
+</RadioGroup>
+

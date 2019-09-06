@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--车辆-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="4"
+        android:paddingStart="40px"
+        android:paddingEnd="40px"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="5"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--车控-->
+        <!--社交包名：cn.flyaudio.flycarinfo 类名：cn.flyaudio.flycarinfo.MainActivity -->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="cn.flyaudio.launcher.carinfor;cn.flyaudio.launcher.carinfor.CarInforActivity"
+            android:checked="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_CarInfor"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--空调-->
+        <RadioButton
+            android:id="@+id/rb2"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Air"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_AirConditioner"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--电话-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Bluetooth"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Phone"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--车机设置-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="com.flyaudio.flyguardian;com.android.launcher.Setup"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_CarSettings"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--智能附件-->
+        <RadioButton
+            android:id="@+id/rb5"
+            android:tag="com.flyaudio.intelligentaccessory;com.flyaudio.intelligentaccessory.AccessoryActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Smart"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+

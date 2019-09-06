@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="394px">
+
+       <LinearLayout
+           android:id="@+id/flyaudio_systemui_rg0"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="146px">
+       </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flyaudio_navigationbar_bottom"
+        android:background="@drawable/flyauido_systemui_navigationbar_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="29px"
+        android:paddingRight="29px"
+        android:paddingTop="41px"
+        android:paddingBottom="20px"
+      >
+
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_ai"
+            android:layout_width="137px"
+            android:layout_height="187px"
+            android:layout_marginRight="40px"
+            android:text="@string/flyauido_systemui_navigationbar_button_ai"
+            android:textSize="28px"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_ai"
+            android:gravity="bottom|center"
+            android:paddingBottom="27px"
+            android:textAllCaps="false"
+            android:textColor="@color/flyaudio_systemui_button_textcolor"/>
+
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_nav"
+            android:layout_width="137px"
+            android:layout_height="187px"
+            android:layout_marginRight="40px"
+            android:text="@string/flyauido_systemui_navigationbar_button_nav"
+            android:textSize="28px"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_nav"
+            android:textColor="@color/flyaudio_systemui_button_textcolor"
+            android:gravity="bottom|center"
+            android:textAllCaps="false"
+            android:paddingBottom="27px"/>
+
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_multimedia"
+            android:layout_width="142px"
+            android:layout_height="187px"
+            android:layout_marginRight="40px"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_multimedia"
+            android:text="@string/flyauido_systemui_navigationbar_button_multimedia"
+            android:textSize="28px"
+            android:gravity="bottom|center"
+            android:paddingBottom="27px"
+            android:textAllCaps="false"
+
+            android:textColor="@color/flyaudio_systemui_button_textcolor"/>
+
+
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_carinfor"
+            android:layout_width="137px"
+            android:layout_height="187px"
+            android:layout_marginRight="40px"
+            android:text="@string/flyauido_systemui_navigationbar_button_carinfor"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_carinfor"
+            android:textSize="28px"
+            android:gravity="bottom|center"
+            android:paddingBottom="27px"
+            android:textAllCaps="false"
+            android:textColor="@color/flyaudio_systemui_button_textcolor"/>
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_socialcontact"
+            android:layout_width="137px"
+            android:layout_height="187px"
+            android:layout_marginRight="40px"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_socialcontact"
+            android:text="@string/flyauido_systemui_navigationbar_button_socialcontact"
+            android:textSize="28px"
+            android:gravity="bottom|center"
+            android:paddingBottom="27px"
+            android:textAllCaps="false"
+            android:textColor="@color/flyaudio_systemui_button_textcolor"/>
+
+
+
+        <Button
+            android:id="@+id/flyaudio_navigationbar_me"
+            android:layout_width="137px"
+            android:layout_height="187px"
+            android:background="@drawable/flyauido_systemui_navigationbar_button_me"
+            android:text="@string/flyauido_systemui_navigationbar_button_me"
+            android:textSize="28px"
+            android:gravity="bottom|center"
+            android:paddingBottom="27px"
+            android:textAllCaps="false"
+            android:textColor="@color/flyaudio_systemui_button_textcolor"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

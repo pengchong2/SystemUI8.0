@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="flyaudio_systemui_video_waring_content_color">#000000</color>
+    <color name="flyaudio_systemui_video_waring_btn_text_color">#000000</color>
+
+    <color name="flyaudio_systemui_video_waring_content_night_color">#000000</color>
+    <color name="flyaudio_systemui_video_waring_btn_text_night_color">#000000</color>
+<!--com.flyaudio.show.Agreepage-->
+    <string name="flyaudio_systemui_start_agreepage">com.flyaudio.show.LockScreen</string>
+    <string name="flyaudio_systemui_start_recentActivity">cn.flyaudio.systemui.action.recents</string>
+
+    <string name="flyaudio_systemui_disenable_display_notification_list">
+        com.baidu.che.codriver;
+        com.baidu.car.radio;
+        com.baidu.che.codriverlauncher;
+        com.android.server.telecom;
+        cn.flyaudio.flyaudiospeechservice;
+        com.android.phone;
+        com.android.mms;
+	com.mediatek.security;
+	com.iflytek.inputmethod;
+        </string>
+
+    <color name="flyaudio_systemui_bottom_button_textcolor_0">#15bba6</color>
+
+    <color name="flyaudio_systemui_qs_text_color_u">#ffffff</color>
+    <color name="flyaudio_systemui_qs_text_color_d">#00b4ff</color>
+
+    <color name="flyaudio_systemui_qs_text_night_color_u">#000000</color>
+    <color name="flyaudio_systemui_qs_text_night_color_d">#df2c61</color>
+    
+    <color name="flyaudio_systemui_qs_default_text_color">#ff0000</color>
+
+    <string name="autoChangeColor">noColorSkin</string>
+    
+    <string name="flyaudio_systemui_qs_order">toggleWifi|toggleMobileData|toggleWifiAp|toggleAirplane|toggleAudio</string>
+    
+    <integer name="flyaudio_systemui_qs_total">5</integer>
+    
+    <integer name="flyaudio_systemui_qs_row_total">5</integer>
+
+    <color name="flyaudio_systemui_reset_title_color">#000000</color>
+    <color name="flyaudio_systemui_reset_button_color">#636673</color>
+
+
+    <color name="flyaudio_systemui_reset_title_night_color">#000000</color>
+    <color name="flyaudio_systemui_reset_button_night_color">#000000</color>
+
+    <color name="flyaudio_systemui_speedbump_line_color">#6fdddddd</color>
+
+    <color name="flyaudio_systemui_emptyShadeView_text_color">#000000</color>
+    <color name="flyaudio_systemui_emptyShadeView_night_text_color">#000000</color>
+
+    <bool name="flyaudio_systemui_backcar_show_dialog">true</bool>
+
+    <color name="notification_legacy_background_color">#ff1a1a1a</color>
+    <color name="notification_material_background_color">#58606c</color>
+    <color name="notification_material_background_low_priority_color">#58606c</color>
+    <color name="notification_ripple_tinted_color">#30ffffff</color>
+    <color name="notification_ripple_color_low_priority">#30000000</color>
+    <color name="notification_ripple_untinted_color">#28000000</color>
+    <color name="notification_material_background_dimmed_color">#58606c</color>
+
+    <dimen name="flyaudio_systemui_recents_stack_top_padding">90dp</dimen>
+
+    <bool name="flyaudio_systemui_isShowRecentCleanButton">true</bool>
+
+    <color name="flyaudio_systemui_recent_clean_button_text_color">#ffffff</color>
+    <color name="flyaudio_systemui_recent_clean_button_text_night_color">#ffffff</color>
+
+    <integer name="flyaudio_systemui_recent_clean_button_text_size">12</integer>
+    <integer name="flyaudio_systemui_recent_clean_button_height">58</integer>
+    <integer name="flyaudio_systemui_recent_clean_button_topMargin">10</integer>
+
+
+    <color name="flyaudio_systemui_system_bar_background_opaque">#ff000000</color>
+
+    <bool name="flyaudio_systemui_hide_flyaudio_app_list_from_recent">true</bool>
+
+    <bool name="flyaudio_systemui_hide_lockscreen">true</bool>
+
+    <integer name="flyaudio_systemui_flyaudio_navigation_width">960</integer>
+    <integer name="flyaudio_systemui_flyaudio_navigation_height">60</integer>
+
+    <string name="flyaudio_systemui_default_path">/flysystem/flyconfig/</string>
+    <string name="flyaudio_systemui_add_path">/flysystem/flytheme/config/appwhitelist.xml</string>
+    <string name="flyaudio_systemui_recents_protected_path">/flysystem/flytheme/config/recentsappwhitelist.xml</string>
+
+    <dimen name="flyaudio_systemui_status_bar_header_line_height">1dp</dimen>
+
+    <bool name="flyaudio_systemui_day_night_mode">false</bool>
+
+    <color name="flyaudio_systemui_bottom_seekbar_text_color">#FFFFFF</color>
+    <color name="flyaudio_systemui_bottom_seekbar_text_night_color">#FFFFFF</color>
+
+    <bool name="flyaudio_systemui_show_navigationbar">false</bool>
+
+    <color name="flyaudio_systemui_date_view_text_color">#FFFFFF</color>
+
+    <!--//back//menu//home//navi//audio//next pre//media//bt//radio-->
+    <string name="flyaudio_systemui_bottom_button_list">back;menu;home;navi;audio</string>
+
+    <color name="flyaudio_systemui_color_choose_state_textview_d">#FFFFFF</color>
+    <color name="flyaudio_systemui_color_choose_state_textview_u">#5c5c5c</color>
+
+    <integer name="flyaudio_systemui_qs_left">0</integer>
+    <integer name="flyaudio_systemui_qs_top">2</integer>
+    <integer name="flyaudio_systemui_qs_right">0</integer>
+    <integer name="flyaudio_systemui_qs_bottom">0</integer>
+
+    <!--关闭/语音-->
+    <string name="flyaudio_systemui_navigationbar_left">voice</string>
+
+    <!--开关/通知-->
+    <!--Margins-->
+    <dimen name="flyaudio_systemui_status_bar_header_left">39px</dimen>
+    <dimen name="flyaudio_systemui_status_bar_header_top">30px</dimen>
+    <dimen name="flyaudio_systemui_status_bar_header_right">0px</dimen>
+    <dimen name="flyaudio_systemui_status_bar_header_bottom">0px</dimen>
+    <!--文字大小-->
+    <integer name="flyaudio_systemui_status_bar_header_text_size">20</integer>
+    <!--文字缩放1%-100%-->
+    <integer name="flyaudio_systemui_status_bar_header_text_scale">80</integer>
+
+
+    <!--768x1024 皮肤包不可控-->
+    <dimen name="flyaudio_systemui_status_bar_header_height_768x1024">72px</dimen>
+    <dimen name="flyaudio_systemui_qs_panel_height_768x1024">846px</dimen>
+    <dimen name="flyaudio_systemui_tab2_height_768x1024">918px</dimen>
+    <dimen name="flyaudio_systemui_notification_stack_tag_height_768x1024">39px</dimen>
+    <dimen name="flyaudio_systemui_notification_stack_scroller_height_768x1024">885px</dimen>
+
+    <!--1024x600 皮肤包不可控-->
+    <dimen name="flyaudio_systemui_fs_pow_change_view_height_1024x600">203px</dimen>
+    <dimen name="flyaudio_systemui_fs_bottom_button_view_height_1024x600">315px</dimen>
+    <dimen name="flyaudio_systemui_include_qs_panel_height_1024x600">340dp</dimen>
+
+
+    <bool name="flyaudio_systemui_FrontMostTaskHide_btn">false</bool>
+
+    <!--温度加单位颜色-->
+    <color name="flyaudio_systemui_flyaudio_navigation_temp_color">#FFFFFF</color>
+    <color name="flyaudio_systemui_flyaudio_navigation_temp_night_color">#FFFFFF</color>
+
+
+    <bool name="disable_install_unkown_app">true</bool>
+
+    <bool name="logclick_home_open_voice">true</bool>
+
+    <!-- 是否屏蔽Settings中的2G网络选项功能 -->
+    <bool name="Settings_disable_2g">true</bool>
+
+<dimen name="notification_material_rounded_rect_radius">4dp</dimen>
+
+</resources>

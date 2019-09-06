@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--社交-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="1"
+        android:paddingStart="40px"
+        android:paddingEnd="40px"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="4"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <!-- 推荐-->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="cn.flyaudio.flyforum;cn.flyaudio.flyforum.RecommendActivity"
+            android:checked="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Recommend"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <!--此刻-->
+        <RadioButton
+            android:id="@+id/rb2"
+            android:tag="cn.flyaudio.flyforum;cn.flyaudio.flyforum.MomentActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_AtTheMoment"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--活动-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="cn.flyaudio.flyforum;cn.flyaudio.flyforum.CampaignActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Activity"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--资讯-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="cn.flyaudio.flyforum;cn.flyaudio.flyforum.InformationActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Information"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true" android:color="@color/flyaudio_systemui_button_textcolor_d"/> <!-- pressed -->
+    <item android:state_focused="true" android:color="@color/flyaudio_systemui_button_textcolor_d"/> <!-- focused -->
+    <item android:color="@color/flyaudio_systemui_button_textcolor_u"/> <!-- default -->
+
+</selector>

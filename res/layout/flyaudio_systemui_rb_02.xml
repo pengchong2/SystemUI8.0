@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <!-- 多媒体-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="2"
+        android:paddingStart="40px"
+        android:paddingEnd="40px"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="5"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--云音乐-->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="cn.kuwo.kwmusiccar;cn.kuwo.kwmusiccar.WelcomeActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_CloudMusic"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--播放器-->
+    <!--android:tag="com.flyaudio.flyguardian;com.android.launcher.AutoMedia"-->
+        <RadioButton
+            android:id="@+id/rb2"
+            android:tag="flyaudiosdk:media"
+            android:checked="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_media"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--蓝牙音乐-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="flyaudiosdk:bluetoothmusic"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_bluetoothmusic"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--收音机-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="flyaudiosdk:radio"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_radio"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--网络电台-->
+        <RadioButton
+            android:id="@+id/rb5"
+            android:tag="com.flyaudio.flyradioonline;com.flyaudio.flyradioonline.task.main.MainActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_NetworkRadio"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </RadioGroup>
+

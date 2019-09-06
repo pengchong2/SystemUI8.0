@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+** Copyright 2012, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+-->
+
+<!-- android:layout_height="@dimen/status_bar_header_height"-->
+<!-- Extends RelativeLayout -->
+<com.android.systemui.qs.QuickStatusBarHeader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/clock_date_icon"
+
+        layout="@layout/quick_status_bar_header_system_icons"
+       />
+    <com.flyaudio.view.PowerWidget
+        android:id="@+id/quickset"
+        android:layout_width="match_parent"
+        android:layout_height="159px"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:paddingTop="53px"
+        android:layout_below="@id/clock_date_icon"/>
+
+    <TextView
+        android:id="@+id/brightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qs_brightness_text"
+        android:textSize="36px"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/quickset"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="60px"/>
+
+    <RelativeLayout
+        android:id="@+id/brightness_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="221px"
+        android:layout_marginTop="22px"
+        android:layout_below="@id/brightness"
+        android:background="@drawable/systemui_brightness_bg"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="34px">
+
+        <TextView
+            android:id="@+id/qs_auto_brightness_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32px"
+            android:layout_marginLeft="35px"
+            android:layout_marginTop="39px"
+            android:textColor="@android:color/white"
+            android:text="@string/qs_auto_brightness_text"/>
+
+        <Switch
+            android:id="@+id/qs_auto_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15px"
+            android:layout_marginRight="29px"
+            android:background="@drawable/auto_switch"
+            android:thumb="@null"
+            android:track="@null" />
+        <SeekBar
+            android:id="@+id/id_seekbar_brightness"
+            android:layout_below="@id/qs_auto_brightness_title"
+            android:layout_width="892px"
+            android:layout_height="60px"
+            android:progressDrawable="@drawable/qs_seekbar_brightness"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="48px"
+            android:thumb="@drawable/qs_seekbar_thumb" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/volume_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/qs_volume_text"
+        android:textSize="36px"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/brightness_rel"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="33px"/>
+
+    <RelativeLayout
+        android:id="@+id/volume_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="221px"
+        android:layout_marginTop="22px"
+        android:layout_below="@id/volume_tv"
+        android:background="@drawable/systemui_brightness_bg"
+        android:layout_marginLeft="35px"
+        android:layout_marginRight="34px">
+
+        <ImageView
+            android:id="@+id/volume_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57px"
+            android:layout_marginTop="36px"
+            android:src="@drawable/volumeimg"/>
+
+        <TextView
+            android:id="@+id/volume_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="32px"
+
+            android:layout_toRightOf="@id/volume_img"
+            android:layout_marginTop="35px"
+            android:textColor="@android:color/white"
+            android:text="30"/>
+
+
+        <SeekBar
+            android:id="@+id/id_seekbar_volume"
+            android:layout_below="@id/volume_img"
+            android:layout_width="892px"
+            android:layout_height="60px"
+            android:progressDrawable="@drawable/qs_seekbar_brightness"
+            android:layout_marginLeft="39px"
+            android:layout_marginTop="48px"
+            android:thumb="@drawable/qs_seekbar_thumb" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_below="@id/volume_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="36px"
+        android:text="@string/notification_text"
+        android:layout_marginTop="49px"
+        android:layout_marginLeft="61px"
+        android:layout_marginBottom="25px"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/hidenotification"
+        android:layout_below="@id/volume_rel"
+        android:layout_alignRight="@id/notification"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4C8FFF"
+        android:textSize="28px"
+        android:text="@string/hide_notification_text"
+        android:layout_marginTop="48px"
+        android:layout_marginRight="61px"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+
+
+
+
+    <com.android.systemui.qs.QuickQSPanel
+        android:id="@+id/quick_qs_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:visibility="gone"
+       />
+
+    <com.android.systemui.statusbar.AlphaOptimizedImageView
+        android:id="@+id/qs_detail_header_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/header_debug_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"/>
+
+</com.android.systemui.qs.QuickStatusBarHeader>

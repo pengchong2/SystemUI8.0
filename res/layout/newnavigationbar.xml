@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:background="@drawable/newenergy_navigation_bg">
+
+   <TextView
+       android:id="@+id/lefttv"
+       android:layout_width="230px"
+       android:layout_height="match_parent"
+       android:textColor="@android:color/white"
+       android:textSize="38px"
+       android:text="20°"
+       android:gravity="center_vertical"
+       android:paddingLeft="45px"
+       android:clickable="true"
+    />
+
+    <ImageButton
+        android:id="@+id/app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_app"
+        android:layout_marginRight="70px"/>
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_home"
+        android:layout_marginRight="70px"
+      />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/new_back"
+       />
+
+    <TextView
+        android:id="@+id/righttv"
+        android:layout_width="230px"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:textSize="38px"
+        android:text="20°"
+        android:gravity="right|center_vertical"
+        android:paddingRight="43px"
+        android:clickable="true"
+      />
+
+</LinearLayout>

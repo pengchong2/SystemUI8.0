@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:layout_marginTop="47px"
+        android:layout_marginBottom="47px"
+      >
+        <include layout="@layout/split_clock_view" />
+
+        <com.android.systemui.statusbar.policy.DateView
+            android:id="@+id/flyaudio_qs_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <com.flyaudio.view.PowerWidget
+        android:id="@+id/fs_pow_01"
+        android:layout_width="match_parent"
+        android:layout_height="384px"
+        android:background="@drawable/flyaudio_systemui_status_qs_bg01"
+        android:orientation="horizontal"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:paddingStart="23px"
+        android:paddingEnd="23px"
+        android:paddingTop="71px"/>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flyaudio_systemui_status_qs_bg02"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/qs_seekbar_volume_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="49px"
+            android:gravity="center"
+            android:text="@string/qs_seekbar_volume_text" />
+
+
+        <ImageButton
+            android:id="@+id/qs_seekbar_volume_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:layout_marginRight="79px"
+            android:background="@drawable/flyaudio_systemui_qs_seekbar_volume_dec" />
+
+        <SeekBar
+            android:id="@+id/id_seekBar"
+            android:layout_width="554px"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/qs_seekbar_volume"
+            android:thumb="@drawable/qs_seekbar_thumb" />
+
+        <ImageButton
+            android:id="@+id/qs_seekbar_volume_inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="79px"
+            android:background="@drawable/flyaudio_systemui_qs_seekbar_volume_inc" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:background="@drawable/flyaudio_systemui_status_qs_bg03">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="136px"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/qs_seekbar_brightness_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="28px"
+                android:layout_marginLeft="49px"
+                android:textColor="@android:color/white"
+                android:text="@string/qs_seekbar_brightness_text" />
+
+            <ImageButton
+                android:id="@+id/qs_seekbar_brightness_dec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38px"
+                android:layout_marginRight="79px"
+                android:background="@drawable/flyaudio_systemui_qs_seekbar_brightness_dec" />
+
+            <SeekBar
+                android:id="@+id/id_seekBar_brightness"
+                android:layout_width="554px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:progressDrawable="@drawable/qs_seekbar_brightness"
+                android:thumb="@drawable/qs_seekbar_thumb" />
+
+            <ImageButton
+                android:id="@+id/qs_seekbar_brightness_inc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="79px"
+                android:background="@drawable/flyaudio_systemui_qs_seekbar_brightness_inc" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="96px">
+
+            <TextView
+                android:id="@+id/qs_auto_brightness_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:textSize="28px"
+                android:layout_marginLeft="49px"
+                android:textColor="@android:color/white"
+                android:text="@string/qs_auto_brightness_text"/>
+
+            <Switch
+                android:id="@+id/qs_auto_brightness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="38px"
+                android:background="@drawable/qs_auto_switch_u"
+                android:thumb="@null"
+                android:track="@null" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px">
+
+        <Button
+            android:id="@+id/qs_mute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/qs_mute"
+            android:text="@string/qs_mute_text"
+            android:textSize="28px"
+            android:paddingLeft="270px"
+            android:gravity="center_vertical"
+            android:textColor="@color/qs_mute_text_color" />
+
+        <Button
+            android:id="@+id/qs_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/qs_clossscreen"
+            android:layout_marginLeft="5px"
+            android:text="@string/qs_clossscreen_text"
+            android:textSize="28px"
+            android:paddingLeft="270px"
+            android:gravity="center_vertical"
+            android:textColor="@color/qs_clossscreen_text_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fs_pow_05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="26px"
+        android:layout_marginRight="26px"
+        android:background="@drawable/flyaudio_systemui_status_qs_bg05"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+</LinearLayout>

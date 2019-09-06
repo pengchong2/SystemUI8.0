@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:orientation="horizontal"
+        android:background="#0C0D0F"
+        android:visibility="gone"
+        >
+
+        <com.flyaudio.view.customerview.LoadingIndicatorView
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicatorName="BallScaleMultipleIndicator"
+            style="@style/LoadingIndicatorView"
+            android:background="@drawable/voice_u"
+            android:layout_marginStart="31px"
+            android:layout_gravity="center"
+            android:clickable="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请叫我 “小德小德”"
+            android:layout_marginStart="28px"
+            android:textSize="28px"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+        <ImageButton
+            android:id="@+id/new_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_volume"
+            android:layout_gravity="center"
+            android:layout_marginStart="616px"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160px"
+        android:orientation="horizontal"
+        android:background="@drawable/newenergy_navigation_bg">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_home"
+            android:layout_marginStart="22px"/>
+        <ImageButton
+            android:id="@+id/navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_navigation"
+            android:layout_marginLeft="4px"/>
+        <ImageButton
+            android:id="@+id/leftseat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_leftseat"
+            android:layout_marginLeft="27px"/>
+        <ImageButton
+            android:id="@+id/frontac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_frontac"
+            android:layout_marginLeft="23px"/>
+        <TextView
+            android:id="@+id/frontactemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20°"
+            android:textColor="#FFFFFF"
+            android:textSize="34px"
+            android:layout_marginLeft="36px"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+
+            <ImageView
+                android:id="@+id/windslevel"
+                android:layout_width="55px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52px"
+                android:layout_marginTop="131px"
+                />
+
+        <TextView
+            android:id="@+id/backactemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20°"
+            android:textColor="#FFFFFF"
+            android:textSize="34px"
+            android:layout_marginLeft="57px"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            />
+
+        <ImageButton
+            android:id="@+id/rightseat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_rightseat"
+            android:layout_marginLeft="33px"/>
+        <ImageButton
+            android:id="@+id/backac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_backac"
+            android:layout_marginLeft="23px"/>
+
+
+
+        <ImageButton
+            android:id="@+id/app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_app"
+            android:layout_marginStart="27px"/>
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_back"
+            android:layout_marginLeft="4px"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@android:id/background" >
+            <shape >
+                <solid android:color="#ffc0c3cb" />
+
+                <size android:width="4px"></size>
+
+
+            </shape>
+
+        </item>
+        <item android:id="@android:id/progress" >
+            <clip>
+                <shape>
+                    <solid android:color="#ff000000" />
+                    <size android:width="4px"></size>
+                </shape>
+            </clip>
+        </item>
+<!--
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/volume_seekbar_orange_bg"/>
+    <item
+        android:id="@android:id/progress">
+        <clip android:drawable="@drawable/volume_seekbar_bg"/>
+    </item> -->
+    </layer-list>
+

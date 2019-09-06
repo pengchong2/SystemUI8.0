@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--导航-->
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:tag="3"
+        android:paddingStart="40px"
+        android:paddingEnd="40px"
+        android:background="@drawable/flyauido_systemui_navigationbar_tablelayout_bg"
+        android:weightSum="5"
+        android:id="@+id/rg0"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--地图-->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:tag="com.autonavi.amapauto;com.autonavi.auto.MainMapActivity"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_clicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Map"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:layout_height="match_parent" />
+
+        <!--充电桩-->
+        <RadioButton
+            android:id="@+id/rb2"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:充电;SOURCE_APP:Third App"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_onclicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Electric"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+        <!--美食-->
+        <RadioButton
+            android:id="@+id/rb3"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:美食;SOURCE_APP:Third App"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_onclicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Cate"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+        <!--停车场-->
+        <RadioButton
+            android:id="@+id/rb4"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:停车场;SOURCE_APP:Third App"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_onclicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_Park"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+        <!--4S店-->
+        <RadioButton
+            android:id="@+id/rb5"
+            android:tag="broadcast:AUTONAVI_STANDARD_BROADCAST_RECV|KEY_TYPE:10036;KEYWORDS:4s;SOURCE_APP:Third App"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/flyauido_systemui_navigationbar_table_onclicked"
+            android:textColor="@color/flyaudio_systemui_tablelist_textcolor"
+            android:text="@string/flyaudio_4S"
+            android:textSize="32px"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"/>
+
+    </RadioGroup>
+
+
